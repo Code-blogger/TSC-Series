@@ -1,0 +1,20 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const index_1 = __importDefault(require("./index"));
+(0, index_1.default)();
+const prompt = require("prompt-sync")();
+let detail;
+let name = prompt("Enter The Name :");
+let age = prompt("Enter the age : ");
+let isMarried = prompt("Is Married? : ");
+detail = [name, age, isMarried];
+console.log("Entered Details: " + detail);
+let Mydetails = ["Mayank Yadav", 23, false];
+console.log("\nMy Details: " + Mydetails.join(" , "));
+let [myName, myAge, myIsMarried] = Mydetails;
+console.log("\nMy Name: " + myName);
+console.log("My Age: " + myAge);
+console.log("My Martial Status: " + myIsMarried);
