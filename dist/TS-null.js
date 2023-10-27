@@ -9,7 +9,7 @@ let obj = {
     name: "Mayank Yadav",
     isMarried: false
 };
-console.log((obj === null || obj === void 0 ? void 0 : obj.name) + "\n");
+console.log((obj === null || obj === void 0 ? void 0 : obj.age) + "\n");
 function INTRO(name, key) {
     var _a;
     console.log(`${key}: ${(_a = name[key]) !== null && _a !== void 0 ? _a : "Not Unavaliable"}`);
