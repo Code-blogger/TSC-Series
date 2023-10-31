@@ -4,18 +4,18 @@ import { type } from 'os';
 intro();
 
 //function Generics
-function add<T>(num1:T,num2:T):number {
+function add<T>(num1:T,num2:T):T {
     if(typeof num1 === 'number' && typeof num2 === 'number'){
-        return num1 + num2;
+        return (num1 + num2) as T;
     }
     console.log("\nEntered Value is not a number!");
-    return 0;
+    return 0 as T;
 }
 
-let v:unknown = add<number>(3,5);
-console.log(`Sum Of Number is ${v}`);
+let s:unknown = add<number>(3,5);
+console.log(`Sum Of Number is ${s}`);
 
-let s:unknown = add<string>("3","4");
+s = add<string|number>("34",3);
 console.log(`Sum Of Number is ${s}`);
 
 //Genrics Class

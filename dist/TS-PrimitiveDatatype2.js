@@ -7,3 +7,5 @@ const index_1 = __importDefault(require("./index"));
 (0, index_1.default)();
 let variable = BigInt("343434343");
 console.log(variable);
+let sym = Symbol("name");
+console.log(sym);

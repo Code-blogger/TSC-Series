@@ -7,14 +7,14 @@ const index_1 = __importDefault(require("./index"));
 (0, index_1.default)();
 function add(num1, num2) {
     if (typeof num1 === 'number' && typeof num2 === 'number') {
-        return num1 + num2;
+        return (num1 + num2);
     }
     console.log("\nEntered Value is not a number!");
     return 0;
 }
-let v = add(3, 5);
-console.log(`Sum Of Number is ${v}`);
-let s = add("3", "4");
+let s = add(3, 5);
+console.log(`Sum Of Number is ${s}`);
+s = add("34", 3);
 console.log(`Sum Of Number is ${s}`);
 class MyClass {
     constructor(num1, num2) {
