@@ -47,9 +47,19 @@ let obj = {
     variable: 45454
 };
 console.log(`\n${obj.variable}\n`);
+function arr(args, str) {
+    if (typeof str == "string") {
+        args.length = str.length;
+        args.UpperCase = str.toUpperCase();
+    }
+    else
+        args.length = 0;
+    return { str, args };
+}
 const obje = {
     num: "Mayank Yadav",
     length: 0
 };
 obje.length = obje.num.length;
 console.log(obje);
+console.log(arr({ length: 343 }, "Mayank"));

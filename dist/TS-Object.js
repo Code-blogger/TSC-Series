@@ -15,3 +15,4 @@ console.log(school);
 let Person = {};
 Person.Mayank = 23;
 Person.ABC = 34;
+console.log(Person);

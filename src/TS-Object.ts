@@ -12,8 +12,12 @@ const school: { name: string, isCoED: boolean, city: string, affiliatedNo: numbe
 console.log(school);
 
 //index signature
-let Person:{[index:string]:number} ={};
+let Person:{
+    [index:string]:number
+} ={};
 
 Person.Mayank=23;
 Person.ABC=34;
 // Person.43="454" //this will give error
+
+console.log(Person);

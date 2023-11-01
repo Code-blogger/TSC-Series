@@ -1,3 +1,4 @@
+import { type } from 'os';
 import intro from './index';
 intro();
 
@@ -12,7 +13,7 @@ interface car extends vechicle {
 }
 
 interface bike extends vechicle {
-	bikeType: string
+	bikeType?: string
 }
 
 let car:car ={
@@ -30,3 +31,15 @@ let bike:bike = {
 
 console.log(car);
 console.log(bike);
+
+//Type Intersection
+type transformer = bike & car;
+
+let optimusPrime:transformer = {
+    cartype: 'Truck',
+    isPetrol: true,
+    vechilceName: "Optimus Prime",
+    numberOftyre: 4,
+}
+
+console.log(optimusPrime);

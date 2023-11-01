@@ -63,6 +63,21 @@ interface myInterface<T extends string|number,S=number> {
     num:T,
     length:S,
 }
+interface my{
+    [index:string]:number|string|undefined,
+    length:number,
+    UpperCase?:string
+}
+
+function arr<t extends my, s extends keyof t>(args:t,str:s):{}{
+    if(typeof str=="string"){
+        args.length=str.length;
+        args.UpperCase=str.toUpperCase();
+    }
+    else
+    args.length=0;
+	return { str, args};
+}
 
 const obje:myInterface<string> = {
     num:"Mayank Yadav",
@@ -71,3 +86,5 @@ const obje:myInterface<string> = {
 
 obje.length = obje.num.length;
 console.log(obje);
+
+console.log(arr<my,string>({length:343},"Mayank"));

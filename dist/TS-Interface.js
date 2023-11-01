@@ -18,3 +18,10 @@ let bike = {
 };
 console.log(car);
 console.log(bike);
+let optimusPrime = {
+    cartype: 'Truck',
+    isPetrol: true,
+    vechilceName: "Optimus Prime",
+    numberOftyre: 4,
+};
+console.log(optimusPrime);

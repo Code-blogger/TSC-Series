@@ -12,3 +12,4 @@ let car = {
     isPetrol: true
 };
 console.log(car);
+console.log(typeof car);
