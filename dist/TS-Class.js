@@ -21,6 +21,25 @@ class nuclearFamily {
 nuclearFamily.num = 0;
 ;
 const family = new nuclearFamily(prompt("Enter Number of Member: ", "0"), prompt("Enter Net Worth: ", "0"));
-const family1 = new nuclearFamily(prompt("Enter Number of Member: ", "0"), prompt("Enter Net Worth: ", "0"));
 family.Show();
-family1.Show();
+class myClass {
+    constructor(name, _age) {
+        this._age = _age;
+        this.show = () => {
+            console.log(`My Name is ${this.name} and Age is ${this._age}`);
+        };
+        this.name = name;
+        this._age = _age;
+    }
+    set age(value) {
+        this._age = value;
+    }
+}
+let obj1 = new myClass("Mayank Yadav");
+obj1.show();
+console.log(obj1["_age"]);
+obj1.age = 343;
+obj1.show();
+console.log(obj1["_age"]);
+let obj2 = new myClass("Piggy", 33);
+obj2.show();

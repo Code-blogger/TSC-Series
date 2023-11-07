@@ -22,3 +22,12 @@ let car:car = {
 
 console.log(car);
 console.log(typeof car);
+        
+//String type with union.
+type genderType = "male" | "female" | "transgender"
+let gender: genderType = "male";
+console.log(gender);
+
+//Intrinsic String Manipulation Types
+let gen:Uppercase<genderType> ="MALE";
+console.log(gen);

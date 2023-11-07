@@ -13,3 +13,7 @@ let car = {
 };
 console.log(car);
 console.log(typeof car);
+let gender = "male";
+console.log(gender);
+let gen = "MALE";
+console.log(gen);
